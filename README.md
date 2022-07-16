@@ -1,5 +1,5 @@
 # Easy Notes 
-## A simple web app for taking your personal notes without any disturbance
+## A simple web app for taking your personal notes.
 
 Features:
 - User can search their notes easily through notes title as well as body.
