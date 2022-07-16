@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Notes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Easy Notes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+        <button class="btn btn-outline-success" id="resetbtn">Reset</button>
+        <button class="btn btn-outline-success" id="impNotesbtn">
+          Important Notes
+        </button>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchtxt" />
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5 item-center">
+    <div id="alert"></div>
+    <h1 class="my-1 fw-bolder">Welcome to Easy Notes</h1>
+
+    <div class="my-4" style="width: 60%">
+      <div class="card-body">
+        <div class="mb-3">
+          <h6 class="card-title">Title</h6>
+
+          <input type="text" class="form-control" id="title" placeholder="Title" />
+        </div>
+        <h6 class="card-title">Add a Note</h6>
+
+        <div class="mb-3 my-3">
+          <textarea class="form-control" id="addtxt" rows="5" placeholder="Here"></textarea>
+        </div>
+        <button class="btn btn-primary" id="addbtn">Add Note</button>
+        <button class="btn btn-primary" id="clearbtn">Clear All</button>
+      </div>
+    </div>
+
+    <h1>Your Notes</h1>
+    <div id="notes" class="row container-fluid my-5"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+</body>
+<script src="script.js"></script>
+
+</html>
